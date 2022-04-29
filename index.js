@@ -21,7 +21,6 @@ class csvtosqs{
 
 	send({file,queueUrl}){
 		let readable = fs.createReadStream(file);
-	
 		pipeline(
 			readable,
 			csv(),
