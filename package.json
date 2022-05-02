@@ -4,8 +4,9 @@
     "description": "Convert csv to json and send a batch of rows to AWS SQS.",
     "main": "index.js",
     "scripts": {
+        "lint": "npx eslint .",
         "test": "echo \"Error: no test specified\" && exit 1",
-        "start-local": "DOTENV_CONFIG_PATH=.env nodemon -r dotenv/config index.js"
+        "dev": "DOTENV_CONFIG_PATH=.env nodemon -r dotenv/config index.js"
     },
     "keywords": [],
     "author": "",
@@ -16,6 +17,7 @@
         "uuid": "^8.3.2"
     },
     "devDependencies": {
-        "dotenv": "^16.0.0"
+        "dotenv": "^16.0.0",
+        "eslint": "^8.11.0"
     }
 }
