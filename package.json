@@ -1,13 +1,17 @@
 {
     "name": "csvtosqs",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Convert csv to json and send a batch of rows to AWS SQS.",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/abhijitcfc143/csvtosqs"
+    },
     "main": "index.js",
     "scripts": {
         "lint": "npx eslint .",
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "DOTENV_CONFIG_PATH=.env nodemon -r dotenv/config index.js"
-    },
+    },    
     "keywords": [],
     "author": "",
     "license": "ISC",
